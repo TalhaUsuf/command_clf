@@ -64,24 +64,24 @@ def main():
     # some vars. for text processing
     # lemmatizer = WordNetLemmatizer()
     # wordnet_map = {"N":wordnet.NOUN, "V":wordnet.VERB, "J":wordnet.ADJ, "R":wordnet.ADV}
-    #
+    
     # # read csv
     # data = pd.read_csv('NLP.csv')
-    #
+    
     # # text pre-processing
     # data["cmd"] = data["NLP Statements"].progress_apply(lambda x: x.strip().lower())
     # data["cmd"] = data["cmd"].progress_apply(lambda text: remove_punctuation(text))
     # data["cleaned"] = data["cmd"].progress_apply(lambda x: " ".join([k for k in x.split() if k not in stopwords.words('english')]))
     # data["lemmatized"] = data["cleaned"].progress_apply(lambda x: lemmatize_words(x, lemmatizer, wordnet_map))
-    #
+    
     # # save the states of lemmatizer and dictionaries
     # dump(lemmatizer, "lemmatizer.pkl")
     # dump(wordnet_map, "wordnet_map.pkl")
-    #
+    
     # Console().print(data["lemmatized"])
-    #
+    
     # data.to_csv('NLP_cleaned.csv', index=False)
-    #
+    
     # df = pd.read_csv('NLP_cleaned.csv', skipinitialspace=True, skip_blank_lines=True)
     # df.drop([k for k in df.columns if k not in ["Commands", "lemmatized"]], axis=1, inplace=True)
     # Console().print(df.columns)
